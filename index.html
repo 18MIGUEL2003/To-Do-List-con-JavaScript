@@ -19,6 +19,16 @@
   
     setInterval(actualizarFechaHora, 1000); // Actualiza cada segundo
     actualizarFechaHora(); // Inicializa al cargar
+    // JavaScript para obtener el valor del input y usarlo en el botón
+    const input = document.getElementById("miInput");
+    const boton = document.getElementById("miBoton");
+
+    boton.addEventListener("click", function() {
+        // Obtener el valor del input
+        const valorInput = input.value;
+        // Aquí puedes hacer algo con el valorInput, como mostrarlo en una alerta
+        alert("El valor del input es: " + valorInput);
+    });
   </script>  
 <body>
     <div class="layout">
@@ -26,8 +36,8 @@
         <nav>
           <h1>LISTA DE TAREAS</h1>
           <div id="fecha-hora" style="font-family: Arial; font-size: 16px;"></div>
-          <input type="text" placeholder="Añadir una tarea" />
-          <button>+</button>
+          <input type="text" id="miInput" placeholder="Añadir una tarea" />
+          <button id="miBoton">+</button>
           <h2>Hoy:</h2>
         </nav>
       </header>
