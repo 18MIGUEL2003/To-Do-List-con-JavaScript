@@ -1,5 +1,6 @@
 body {
     margin: 0;
+    color: rgb(255, 255, 255);
   }
   
   .layout {
@@ -9,7 +10,7 @@ body {
   
   header {
     width: 280px;
-    background-color: #ddd;
+    background-color: #5396ee;
     padding: 1rem;
   }
   
@@ -22,11 +23,11 @@ body {
   main {
     flex: 1;
     padding: 1rem;
-    background-color: #f4f4f4;
+    background-image: url("Imagenes/main_fondo.jpg");
   }
   
   article {
-    background: white;
+    background: #5396ee;
     border: 1px solid #ccc;
     padding: 1rem;
     margin-bottom: 1rem;
